@@ -10,7 +10,7 @@ api_blueprint = Blueprint('api_blueprint', __name__)
 api_logger = logging.getLogger(name=None)
 
 # Cоздаем ему обработчик
-file_handler = logging.FileHandler("../coursework3/logs/api.log")
+file_handler = logging.FileHandler("logs/api.log")
 
 # Создаем новое форматирование
 formatter_api = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
