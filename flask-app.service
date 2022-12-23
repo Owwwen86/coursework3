@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/ksmirnov/app
-ExecStart=/home/ksmirnov/app/venv/bin/python -m gunicorn -b 0.0.0.0:8080 -w 4
+ExecStart=/home/ksmirnov/app/venv/bin/python3.10 -m gunicorn -b 0.0.0.0:8080 -w 4
 Restart=Always
 
 [Install]
